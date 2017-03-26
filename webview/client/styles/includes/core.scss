@@ -1,0 +1,116 @@
+html, body {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background-color: #f6f6f6;
+}
+.header-ios {
+  height: 60px;
+  background-color: #428bca;
+  color: white;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  top: 0;
+  .header-title {
+    font-size: 18px;
+  }
+  .header-menu,
+  .header-search {
+    color: white;
+    font-size: 24px;
+  }
+}
+.btn-sub {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: white;
+    color: #333;
+  }
+  &.active {
+    background-color: #428bca;
+    border-color: #428bca;
+    color: white;
+  }
+}
+.btn-primary {
+    background-color: #428bca;
+    border-color: #428bca;
+    &:hover,
+    &:focus {
+      background-color: #428bca;
+      border-color: #428bca;
+    }
+    &:active,
+    &.active {
+      background-color: #3c7eb8;
+      border-color: #3c7eb8;
+    }
+}
+.modal-content {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: white;
+}
+.modal-backdrop.in {
+    filter: alpha(opacity=65);
+    opacity: .65;
+}
+
+.root,
+.content {
+  position: absolute;
+}
+.sidebar {
+  z-index: 100000 !important;
+  background-color: white;
+  padding: 20px;
+  position: fixed !important;
+  width: calc(100% - 20%);
+}
+.overlay {
+  z-index: 10000 !important;
+}
+
+.sidebar-menu {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   flex-flow: row wrap;
+   align-content: flex-end;
+   margin-top: 20px;
+   .sidebar-menu-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        color: inherit;
+        padding: 10px;
+        .smi-icon {
+            font-size: 48px;
+        }
+        .smi-name {
+            font-weight: bold;
+        }
+    }
+}
+
+.sidebar-footer > button {
+  width: 100%;
+  padding: 15px;
+  background: none;
+  border-radius: 50px;
+  margin-top: 10px;
+  border: 1px solid;
+  outline: none;
+}
+.sidebar-footer > button:active {
+  box-shadow: inset 0 3px 5px rgba(0,0,0,0.4);
+}

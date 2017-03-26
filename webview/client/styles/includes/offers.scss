@@ -1,0 +1,128 @@
+.file_upload {
+    position: relative;
+    overflow: hidden;
+    &.avatar {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      button {
+        padding: 6px;
+        font-size: 18px;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+      }
+      input[type=file] {
+        cursor: pointer;
+      }
+    }
+}
+
+.file_upload > button {
+  color: inherit;
+  font-size: 32px;
+}
+
+.file_upload input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(20);
+    letter-spacing: 10em;     /* IE 9 fix */
+    -ms-transform: scale(20); /* IE 9 fix */
+    opacity: 0;
+    cursor: pointer
+}
+
+.offer-add-photos {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    position: relative;
+    .oap-item {
+        width: 120px;
+        height: 100px;
+        position: relative;
+        border-radius: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid #ccc;
+        margin: 10px;
+        .oap-remove {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          background-color: black;
+          color: white;
+          border-radius: 50%;
+        }
+    }
+    .closeButton {
+        font-size: 32px;
+        margin-left: auto;
+        position: absolute;
+        color: inherit;
+        top: 0;
+        right: 0;
+    }
+}
+
+.help-add-photos {
+    text-align: left;
+    margin: 10px;
+}
+.condition-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    .help-condition-item {
+        margin: 10px;
+    }
+    label {
+      padding: 5px 10px;
+      span {
+        margin-left: 5px;
+      }
+    }
+}
+
+.report-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ri-img {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    .ri-title {
+        font-size: 18px;
+    }
+    .ri-username {
+      font-weight: bold;
+      margin-bottom: 20px;
+      &:before {
+        content: "@";
+      }
+    }
+}
+
+.safespot-controls {
+    display: flex;
+    font-size: 72px;
+}
+
+.safespot-controls > svg {
+    height: 34px;
+    margin: 0 5px;
+}
+
+.selected-safespot {
+    text-align: left;
+    margin-top: 15px;
+}

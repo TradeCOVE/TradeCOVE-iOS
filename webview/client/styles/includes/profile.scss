@@ -1,0 +1,153 @@
+.p-header {
+  display: flex;
+  flex-direction: column;
+}
+.ph-top {
+  display: flex;
+  align-items: flex-end;
+  .ph-avatar {
+    border-radius: 3px;
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+    position: relative;
+  }
+  .ph-rating {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+}
+.ph-bottom {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  margin-top: 10px;
+}
+.ph-username {
+  min-width: 80px;
+  &:before {
+    content: '@';
+  }
+}
+.ph-location {
+  display: flex;
+  margin-left: 20px;
+  span {
+    padding-left: 5px;
+  }
+}
+.ph-settings {
+  font-size: 24px;
+  margin-left: auto;
+  color: inherit;
+}
+.profile-page {
+  padding: 30px;
+  margin-top: 60px;
+  position: relative;
+  z-index: 5;
+  .p-about {
+    &.card {
+      margin: 10px 0;
+      padding: 15px 10px;
+      text-align: left;
+    }
+  }
+  .p-interests {
+    display: flex;
+    align-items: center;
+    .card {
+      margin: 0;
+      padding: 8px;
+      text-align: left;
+      width: 100%;
+      .interest-item {
+        &:after {
+          content: ', ';
+        }
+        &:last-child {
+          &:after {
+            content: '';
+          }
+        }
+      }
+    }
+    .p-newinterest {
+      margin-left: auto;
+      font-size: 22px;
+      color: inherit;
+    }
+  }
+  .p-footer {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: -30px;
+    a {
+      font-size: 56px;
+      color: inherit;
+    }
+  }
+}
+
+.p-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  .pl-card {
+    padding: 25px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    position: relative;
+    outline: none;
+    width: 45%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .plc-checked {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 34px;
+      background-color: white;
+      border-radius: 50%;
+      margin: 10px;
+      display: none;
+    }
+    &.active {
+      .plc-checked {
+        display: block;
+      }
+    }
+    .plc-img {
+      width: 30vw;
+      height: 30vw;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 4px;
+    }
+    .plc-title {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+  }
+}
+
+.user-subcategory {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  .btn-sub {
+    margin-left: auto;
+  }
+}

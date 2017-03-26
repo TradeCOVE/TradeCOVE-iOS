@@ -1,0 +1,4 @@
+{
+  "browser": "TradeCoveApp.client.js",
+  "main": "TradeCoveApp.server.js"
+}

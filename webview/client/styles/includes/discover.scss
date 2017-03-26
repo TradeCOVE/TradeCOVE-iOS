@@ -1,0 +1,22 @@
+.discover-page {
+  position: relative;
+  z-index: 5;
+  .d-search {
+    margin: 20px;
+  }
+}
+.d-block {
+  margin-bottom: 30px;
+  height: 250px;
+  h4 {
+    text-align: center;
+  }
+  .db-pane {
+    /*width: 150px !important;*/
+    .dbp-img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+    }
+  }
+}
