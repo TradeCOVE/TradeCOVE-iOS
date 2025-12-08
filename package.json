@@ -1,0 +1,15 @@
+{
+  "name": "tradecove",
+  "version": "0.0.1",
+  "description": "TradeCove - Multi-project repository",
+  "private": true,
+  "scripts": {
+    "install": "cd webview && npm install",
+    "start": "cd webview && npm start",
+    "build": "cd webview && npm run build",
+    "dev": "cd webview && npm start"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
