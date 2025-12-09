@@ -1,15 +1,21 @@
 {
   "name": "tradecove",
   "version": "0.0.1",
-  "description": "TradeCove - Multi-project repository",
+  "description": "TradeCove - Trading platform",
   "private": true,
+  "type": "module",
   "scripts": {
-    "install": "cd webview && npm install",
-    "start": "cd webview && npm start",
-    "build": "cd webview && npm run build",
-    "dev": "cd webview && npm start"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "engines": {
-    "node": ">=14.0.0"
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.2"
   }
 }
